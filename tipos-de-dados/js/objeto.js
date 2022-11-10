@@ -2,7 +2,7 @@
 var item = {};
 var item2 = {nome: 'refrigetente', preço: 23.5, ativo: true}
 var pessoa = {nome: 'lenilson', idade: 21, objetivos: 'Adiquirir mais e mais conhecimento'};
-var pessoa1 = {nome: 'wittorya', idade:24, detalhes:{detalhe: 'chata' }};
+var pessoa1 = {nome: 'wittorya', idade:50, detalhes:{detalhe: 'chata' }};
 
 //forma construtora
 
