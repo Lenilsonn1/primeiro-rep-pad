@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Formularios</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Cidades
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-dark">
+                                    <li><a class="dropdown-item" href="#">PB</a></li>
+                                    <li><a class="dropdown-item" href="#">AC</a></li>
+                                    <li><a class="dropdown-item" href="#">PE</a></li>
+                                    <li><a class="dropdown-item" href="#">RN</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <form class="d-flex mt-3" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+    </br>
+    </br>
+    </br>
+    <h1 class="text-center">diferença entre formularo HTML e Bootstrap</h1>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <h3>Form com HTML</h3>
+                <h2>Cadastro de Cliente</h2>
+                <form action="/" method="post" id="formHtml">
+                    <label for="nomeHtml">Nome</label>
+                    <input type="text" id="nomeHtml" name="nomeHtml" placeholder="Informe seu nome">
+
+                    <div class="col-sm">
+                        <label for="senhaHtml">Senha</label>
+                        <input type="text" id="senhaHtml" name="senhaHtml" placeholder="******">
+                    </div>
+                    <div class="col-sm">
+                        <input type="checkbox" name="checkbox" id="checkboxHtml">
+                        <label for="checkboxHtml">Check me out</label>
+                    </div>
+                    <div>
+                        <label for="formaContatoTelefoneRadioHtml">Contato por Telefone</label>
+                        <input type="radio" name="formaContatoHTML" id="formaContatoTelefoneRadioHtml">
+
+                        <label for="formaContatoEmailRadioHtml">Contato por email</label>
+                        <input type="radio" name="formaContatoHTML" id="formaContatoEmailRadioHtml">
+                    </div>
+                    <div>
+                        <select name="estadoSelectHtml" id="estadoSelectHtml">
+                            <option value="">Selecione um estado</option>
+                            <option value="CE">CE</option>
+                            <option value="PB">PB</option>
+                            <option value="PE">PE</option>
+                            <option value="RN">RN</option>
+                        </select>
+                    </div>
+                    <button type="submit" name="botãoHtml">cadastrar</button>
+                </form>
+            </div>
+
+            <!-- formulario com bootstrap -->
+            <div class="col-sm">
+                <h3>Form com bootstrap</h3>
+                <h2>Cadastro de Cliente</h2>
+                <form action="/" method="post" id="formBoot">
+                    <div class="mb-3">
+                        <label for="nomeBoot" class="form-label">Nome</label>
+                        <input type="text" class="form-control " id="nomeBoot" aria-describedby="emailHelp"
+                            placeholder="Informe seu nome">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="senhaBoot" class="form-label">Senha</label>
+                        <input type="password" class="form-control" id="senhaBoot">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formaContatoBoot" id="formaContatoTelefoneRadioBoot">
+                        <label class="form-check-label" for="formaContatoEmailRadioBoot">
+                            Telefone
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="formaContatoBoot" id="formaContatoEmailRadioBoot"
+                            checked>
+                        <label class="form-check-label" for="formaContatoEmailRadioBoot">
+                            Email
+                        </label>
+                    </div>
+                    <br>
+                    <select class="form-select" aria-label="Default select example" name="estadoSelectBoot" id="estadoSelectBoot">
+                        <option selected>Selecione Estado</option>
+                        <option value="CE">CE</option>
+                        <option value="PB">PB</option>
+                        <option value="PE">PE</option>
+                        <option value="RN">RN</option>
+                      </select>
+                      <br>
+                      <div>
+                        <button type="button" onclick="exibirDados(formBoot.nomeBoot)" class="btn btn-primary">mostrar dados</button>
+                      </div>
+                      
+                      <br>
+                    <button type="submit" class="btn btn-primary">cadastrar</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/jquery-3.6.1.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/js.js"></script>
+</body>
+
+</html>

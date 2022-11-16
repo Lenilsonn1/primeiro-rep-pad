@@ -29,6 +29,7 @@
 
 
 // percorrer arrays e saber cada tipo
+
 var arrayDeTipos = ['Maria', '', 5.6, 1 , 0 , -1 , 18 , true, false , null, undefined, NaN, Infinity,
 -Infinity, [], [1,2,'c#'], function(){return 10;}];
 
